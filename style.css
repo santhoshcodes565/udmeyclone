@@ -1,69 +1,76 @@
-*{
+* {
     margin: 0px;
-    padding:0px;
+    padding: 0px;
 }
 
-body{
-    
-  font-family: "Gabarito", sans-serif;
- 
+body {
+
+    font-family: "Gabarito", sans-serif;
+
 
 }
-.navbar{
+
+.navbar {
     display: flex;
-   justify-content: space-between;
-   padding: 10px;
-   border-bottom: solid black 1px;
-   gap:10px;
-   align-items: center;
-   position: sticky;
-   top: 0;
-   background-color: white;
-   z-index:1;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: solid black 1px;
+    gap: 10px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
-.navbar-s1__title{
+
+.navbar-s1__title {
     color: #A435F0;
     align-items: center;
-} 
-.navbar-s2{
-    padding:10px;
+}
+
+.navbar-s2 {
+    padding: 10px;
     border: solid black 1px;
     border-radius: 30px;
     width: 50%;
     display: flex;
     gap: 10px;
     align-items: center;
-    
+
 
 }
-.navbar-s2__input{
+
+.navbar-s2__input {
     border: none;
     width: 100%;
     font-size: 16px;
     background-color: transparent;
 }
-.navbar-s2__input:focus{
+
+.navbar-s2__input:focus {
     outline: none;
 
 }
-.navbar-s3{
+
+.navbar-s3 {
     display: flex;
-    gap:10px;
+    gap: 10px;
     align-items: center;
-    
+
 }
 
 /*mylearningpopup*/
-.mylearning{
+.mylearning {
     position: relative;
     cursor: pointer;
 
 }
-.mylearning:hover .mylearning-popup{
+
+.mylearning:hover .mylearning-popup {
     display: block;
 }
 
-.mylearning-popup{
+.mylearning-popup {
     position: absolute;
     background-color: white;
     border: solid black 1px;
@@ -75,29 +82,43 @@ body{
 
 
 }
-.categories{
+
+.categories {
     display: flex;
-    justify-content:space-around ;
-    padding:10px;
+    justify-content: space-around;
+    padding: 10px;
     border-bottom: solid black 1px;
 
 }
-.title1{
-    background-color:#A435F0 ;
+
+.title1 {
+    background-color: #A435F0;
     color: white;
     border-radius: 30px;
     padding: 10px;
-    
-}
-.sale-image{
-    position: relative;
-}
-.sale-image {
-    width: 100%;
- 
+    cursor: pointer;
+    border: solid #A435F0 1px;
+
 }
 
-.sale_image-offer{
+.title1:hover {
+    transition: 1s;
+    background-color: transparent;
+    color: black;
+    border: solid #A435F0 1px;
+
+}
+
+.sale-image {
+    position: relative;
+}
+
+.sale-image {
+    width: 100%;
+
+}
+
+.sale_image-offer {
     position: absolute;
     bottom: 100px;
     background-color: white;
@@ -105,76 +126,102 @@ body{
     border: solid black 2px;
     padding: 2%;
     left: 100px;
-
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
-.recommended{
+
+@keyframes zoom {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.recommended {
     padding: 20px;
 }
-.recommended__container{
+
+.recommended__container {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
     flex-wrap: wrap;
 }
-.course-card{
+
+.course-card {
     width: 250px;
-    padding:20px;
-    
+    padding: 20px;
+
 }
-.course-card img{
-    width:100%;
+
+.course-card img {
+    width: 100%;
 }
-.topics{
+
+.topics {
     padding: 10px;
 }
-.topics__container p{
-    border:solid gray 2px;
-    padding:10px;
+
+.topics__container p {
+    border: solid gray 2px;
+    padding: 10px;
     flex-grow: 1;
-    flex-basis:25% ;
-    
+    flex-basis: 25%;
+
 
 
 }
-.topics__container{
+
+.topics__container {
     display: flex;
     flex-basis: 40%;
-    margin-top:10px;
-    gap:10px;
+    margin-top: 10px;
+    gap: 10px;
     flex-wrap: wrap;
 }
-.popular{
-    padding:10px;
+
+.popular {
+    padding: 10px;
 
 }
-.popular__container{
+
+.popular__container {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 10px;
 }
-.footer{
+
+.footer {
     padding: 30px;
     background-color: black;
-    color:white
+    color: white
 }
-.footer__one{
+
+.footer__one {
     display: flex;
-    gap:10px;
-    
+    gap: 10px;
+
 }
-.footer__one p{
+
+.footer__one p {
     margin: 20px;
 }
-.footer__one--s1{
+
+.footer__one--s1 {
     padding: ;
 }
-.footer__two{
+
+.footer__two {
     display: flex;
     margin: 20px;
-    align-items: center ;
+    align-items: center;
     justify-content: space-between;
-    gap:20px;
+    gap: 20px;
 }
-
-
